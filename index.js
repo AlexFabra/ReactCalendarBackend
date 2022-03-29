@@ -1,9 +1,10 @@
 //es un import:
 const express = require('express');
-const cors = require('cors');
-const { dbConnection } = require('./config');
 //para disponer de las variables de entorno de la carpeta env (necesario instalar npm i dotenv)
 require('dotenv').config();
+const cors = require('cors');
+const { dbConnection } = require('./config');
+
 //crear servidor de express (necesario instalar npm i express)
 const app = express(); 
 
