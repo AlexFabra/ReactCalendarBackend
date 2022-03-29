@@ -1,6 +1,7 @@
 //es un import:
 const express = require('express');
 const { dbConnection } = require('./config');
+const cors = require('cors')
 //para disponer de las variables de entorno de la carpeta env (necesario instalar npm i dotenv)
 require('dotenv').config();
 //crear servidor de express (necesario instalar npm i express)
@@ -8,6 +9,9 @@ const app = express();
 
 //bdd conn
 dbConnection();
+
+//cors
+app.use(cors())
 
 //Directorio publico
 //middleware: función que se ejecuta cuando se hace una peticion al servidor
