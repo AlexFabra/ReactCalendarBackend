@@ -8,13 +8,13 @@ const validarJWT = (req, res = response, next) => {
     if (!token) {
         return res.status(401).json({
             ok: false,
-            msg: 'No hay token en la peticion'
+            msg: 'No hay token en la petición'
         });
     }
     try {
         const {uid, name} = jwt.verify(
             token,
-            proces.env.SECRET_JWT_SEED
+            process.env.SECRET_JWT_SEED
         );
         req.uid = uid;
         req.name = name;
