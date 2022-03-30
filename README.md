@@ -1,4 +1,5 @@
 # ReactCalendarBackend
-Backend developed with React for an online diary. Connected with MongoDB Atlas. It handle tokens
+Backend developed with React for an online diary. Connected with MongoDB Atlas.
+frontend updated at public folder
 
-Production mode backend at https://scheduleback.herokuapp.com/
+Production mode app at https://scheduleback.herokuapp.com/
